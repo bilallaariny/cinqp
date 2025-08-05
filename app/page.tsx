@@ -260,72 +260,36 @@ export default function HomePage() {
       >
         <div className="container mx-auto px-16 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {!isMobile ? ( // Apply animation only on PC
-              <motion.div className="space-y-6" variants={fadeInFromTopVariants}>
-                <h1 className="text-4xl lg:text-6xl font-bold text-[#282828] leading-tight">
-                  Donnez vie à vos espaces avec <span className="text-[#B18C45]">5P</span>
-                </h1>
-                <p className="text-xl text-[#282828]/80 leading-relaxed">
-                  Expert en aménagement & décoration à Marrakech
-                </p>
-                <p className="text-lg text-[#282828]/70">
-                  Des solutions sur-mesure pour vos projets professionnels et particuliers
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact">
-                    <AnimatedButton>Demandez un devis</AnimatedButton>
-                  </Link>
-                  <Link href="/services">
-                    <AnimatedButton className="border-[#B18C45] text-[#B18C45] hover:bg-[#B18C45] hover:text-white px-8 py-3 text-lg bg-transparent">
-                      Découvrez nos services
-                    </AnimatedButton>
-                  </Link>
-                </div>
-              </motion.div>
-            ) : (
-              <div className="space-y-6">
-                <h1 className="text-4xl lg:text-6xl font-bold text-[#282828] leading-tight">
-                  Donnez vie à vos espaces avec <span className="text-[#B18C45]">5P</span>
-                </h1>
-                <p className="text-xl text-[#282828]/80 leading-relaxed">
-                  Expert en aménagement & décoration à Marrakech
-                </p>
-                <p className="text-lg text-[#282828]/70">
-                  Des solutions sur-mesure pour vos projets professionnels et particuliers
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact">
-                    <AnimatedButton>Demandez un devis</AnimatedButton>
-                  </Link>
-                  <Link href="/services">
-                    <AnimatedButton className="border-[#B18C45] text-[#B18C45] hover:bg-[#B18C45] hover:text-white px-8 py-3 text-lg bg-transparent">
-                      Découvrez nos services
-                    </AnimatedButton>
-                  </Link>
-                </div>
+            <motion.div className="space-y-6" variants={fadeInFromTopVariants}>
+              <h1 className="text-4xl lg:text-6xl font-bold text-[#282828] leading-tight">
+                Donnez vie à vos espaces avec <span className="text-[#B18C45]">5P</span>
+              </h1>
+              <p className="text-xl text-[#282828]/80 leading-relaxed">
+                Expert en aménagement & décoration à Marrakech
+              </p>
+              <p className="text-lg text-[#282828]/70">
+                Des solutions sur-mesure pour vos projets professionnels et particuliers
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/contact">
+                  <AnimatedButton>Demandez un devis</AnimatedButton>
+                </Link>
+                <Link href="/services">
+                  <AnimatedButton className="border-[#B18C45] text-[#B18C45] hover:bg-[#B18C45] hover:text-white px-8 py-3 text-lg bg-transparent">
+                    Découvrez nos services
+                  </AnimatedButton>
+                </Link>
               </div>
-            )}
-            {!isMobile ? ( // Apply animation only on PC
-              <motion.div className="relative" variants={fadeInFromRightVariants}>
-                <Image
-                  src="/664b4fd1de1b09a51271ad76_hero-home.webp"
-                  alt="Aménagement intérieur moderne"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-2xl"
-                />
-              </motion.div>
-            ) : (
-              <div className="relative">
-                <Image
-                  src="/664b4fd1de1b09a51271ad76_hero-home.webp"
-                  alt="Aménagement intérieur moderne"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-2xl"
-                />
-              </div>
-            )}
+            </motion.div>
+            <motion.div className="relative" variants={fadeInFromRightVariants}>
+              <Image
+                src="/664b4fd1de1b09a51271ad76_hero-home.webp"
+                alt="Aménagement intérieur moderne"
+                width={800}
+                height={600}
+                className="rounded-lg shadow-2xl"
+              />
+            </motion.div>
           </div>
         </div>
       </motion.section>
@@ -339,68 +303,34 @@ export default function HomePage() {
       >
         <div className="container mx-auto px-16 max-w-4xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {!isMobile ? ( // Apply animation only on PC
-              <motion.div variants={fadeInFromLeftVariants}>
-                <Image
-                  src="/664b4fd153ae4ac0fa2a6c2c_amenagement-2.webp"
-                  alt="Équipe 5P"
-                  width={600}
-                  height={500}
-                  className="rounded-lg shadow-lg"
-                />
-              </motion.div>
-            ) : (
-              <div>
-                <Image
-                  src="/664b4fd153ae4ac0fa2a6c2c_amenagement-2.webp"
-                  alt="Équipe 5P"
-                  width={600}
-                  height={500}
-                  className="rounded-lg shadow-lg"
-                />
+            <motion.div variants={fadeInFromLeftVariants}>
+              <Image
+                src="/664b4fd153ae4ac0fa2a6c2c_amenagement-2.webp"
+                alt="Équipe 5P"
+                width={600}
+                height={500}
+                className="rounded-lg shadow-lg"
+              />
+            </motion.div>
+            <motion.div className="space-y-6" variants={fadeInFromRightVariants}>
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#282828]">
+                À propos de <span className="text-[#B18C45]">5P</span>
+              </h2>
+              <p className="text-lg text-[#282828]/80 leading-relaxed">
+                5P est une entreprise spécialisée dans l'aménagement intérieur et la décoration à Marrakech. Forts d'une
+                expérience solide, nous allions créativité et savoir-faire technique pour transformer vos espaces selon
+                vos besoins et vos envies.
+              </p>
+              <p className="text-lg text-[#282828]/80 leading-relaxed">
+                Notre équipe passionnée s'engage à vous offrir des solutions personnalisées, respectueuses des délais et
+                des budgets, pour des résultats à la hauteur de vos attentes.
+              </p>
+              <div className="mt-6">
+                <Link href="/about">
+                  <AnimatedButton>Voir plus</AnimatedButton>
+                </Link>
               </div>
-            )}
-            {!isMobile ? ( // Apply animation only on PC
-              <motion.div className="space-y-6" variants={fadeInFromRightVariants}>
-                <h2 className="text-3xl lg:text-4xl font-bold text-[#282828]">
-                  À propos de <span className="text-[#B18C45]">5P</span>
-                </h2>
-                <p className="text-lg text-[#282828]/80 leading-relaxed">
-                  5P est une entreprise spécialisée dans l'aménagement intérieur et la décoration à Marrakech. Forts
-                  d'une expérience solide, nous allions créativité et savoir-faire technique pour transformer vos
-                  espaces selon vos besoins et vos envies.
-                </p>
-                <p className="text-lg text-[#282828]/80 leading-relaxed">
-                  Notre équipe passionnée s'engage à vous offrir des solutions personnalisées, respectueuses des délais
-                  et des budgets, pour des résultats à la hauteur de vos attentes.
-                </p>
-                <div className="mt-6">
-                  <Link href="/about">
-                    <AnimatedButton>Voir plus</AnimatedButton>
-                  </Link>
-                </div>
-              </motion.div>
-            ) : (
-              <div className="space-y-6">
-                <h2 className="text-3xl lg:text-4xl font-bold text-[#282828]">
-                  À propos de <span className="text-[#B18C45]">5P</span>
-                </h2>
-                <p className="text-lg text-[#282828]/80 leading-relaxed">
-                  5P est une entreprise spécialisée dans l'aménagement intérieur et la décoration à Marrakech. Forts
-                  d'une expérience solide, nous allions créativité et savoir-être technique pour transformer vos espaces
-                  selon vos besoins et vos envies.
-                </p>
-                <p className="text-lg text-[#282828]/80 leading-relaxed">
-                  Notre équipe passionnée s'engage à vous offrir des solutions personnalisées, respectueuses des délais
-                  et des budgets, pour des résultats à la hauteur de vos attentes.
-                </p>
-                <div className="mt-6">
-                  <Link href="/about">
-                    <AnimatedButton>Voir plus</AnimatedButton>
-                  </Link>
-                </div>
-              </div>
-            )}
+            </motion.div>
           </div>
         </div>
       </motion.section>
@@ -500,23 +430,13 @@ export default function HomePage() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <motion.div className="container mx-auto px-16 max-w-4xl" variants={fadeInVariants}>
-          {!isMobile ? ( // Apply animation only on PC
-            <motion.div className="text-center mb-12" variants={fadeInFromTopVariants}>
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">Réalisations / Projets récents</h2>
-              <p className="text-lg text-[#282828]/70 max-w-3xl mx-auto">
-                Découvrez quelques-unes de nos dernières réalisations, où l'alliance du design et de la fonctionnalité
-                sublime chaque espace.
-              </p>
-            </motion.div>
-          ) : (
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">Réalisations / Projets récents</h2>
-              <p className="text-lg text-[#282828]/70 max-w-3xl mx-auto">
-                Découvrez quelques-unes de nos dernières réalisations, où l'alliance du design et de la fonctionnalité
-                sublime chaque espace.
-              </p>
-            </div>
-          )}
+          <motion.div className="text-center mb-12" variants={fadeInFromTopVariants}>
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">Réalisations / Projets récents</h2>
+            <p className="text-lg text-[#282828]/70 max-w-3xl mx-auto">
+              Découvrez quelques-unes de nos dernières réalisations, où l'alliance du design et de la fonctionnalité
+              sublime chaque espace.
+            </p>
+          </motion.div>
           {isMobile ? (
             <div className="px-4">
               <Carousel
@@ -534,27 +454,28 @@ export default function HomePage() {
                 >
                   {realisationCards.map((card, index) => (
                     <CarouselItem key={index} className="pl-4 basis-full ">
-                      {/* Removed motion.div for mobile carousel items */}
-                      <Card className="bg-white border-gray-200 text-[#282828] flex flex-col h-full rounded-lg shadow-lg ">
-                        <CardHeader className="p-0 ">
-                          <Image
-                            src={card.image || "/placeholder.svg"}
-                            width={400}
-                            height={300}
-                            alt={card.alt}
-                            className="rounded-t-lg object-cover w-full h-64"
-                          />
-                        </CardHeader>
-                        <CardContent className="flex-grow flex flex-col justify-between p-4 pt-4">
-                          <CardTitle className="text-lg font-medium text-left">{card.title}</CardTitle>
-                          <Button
-                            asChild
-                            className="bg-[#B18C45] text-white hover:bg-[#B18C45]/90 rounded-md px-4 py-2 text-sm font-semibold mt-4 self-start"
-                          >
-                            <Link href={card.link}>Voir le projet</Link>
-                          </Button>
-                        </CardContent>
-                      </Card>
+                      <motion.div variants={itemVariants}>
+                        <Card className="bg-white border-gray-200 text-[#282828] flex flex-col h-full rounded-lg shadow-lg ">
+                          <CardHeader className="p-0 ">
+                            <Image
+                              src={card.image || "/placeholder.svg"}
+                              width={400}
+                              height={300}
+                              alt={card.alt}
+                              className="rounded-t-lg object-cover w-full h-64"
+                            />
+                          </CardHeader>
+                          <CardContent className="flex-grow flex flex-col justify-between p-4 pt-4">
+                            <CardTitle className="text-lg font-medium text-left">{card.title}</CardTitle>
+                            <Button
+                              asChild
+                              className="bg-[#B18C45] text-white hover:bg-[#B18C45]/90 rounded-md px-4 py-2 text-sm font-semibold mt-4 self-start"
+                            >
+                              <Link href={card.link}>Voir le projet</Link>
+                            </Button>
+                          </CardContent>
+                        </Card>
+                      </motion.div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
@@ -586,19 +507,11 @@ export default function HomePage() {
       {/* Pourquoi choisir 5P */}
       <motion.section className="py-16" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
         <motion.div className="container mx-auto px-16 max-w-4xl" variants={fadeInVariants}>
-          {!isMobile ? ( // Apply animation only on PC
-            <motion.div className="text-center mb-12" variants={fadeInFromTopVariants}>
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-8">
-                Pourquoi choisir <span className="text-[#B18C45]">5P</span> ?
-              </h2>
-            </motion.div>
-          ) : (
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-8">
-                Pourquoi choisir <span className="text-[#B18C45]">5P</span> ?
-              </h2>
-            </div>
-          )}
+          <motion.div className="text-center mb-12" variants={fadeInFromTopVariants}>
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-8">
+              Pourquoi choisir <span className="text-[#B18C45]">5P</span> ?
+            </h2>
+          </motion.div>
           {isMobile ? (
             <div className="px-4">
               <Carousel
@@ -617,13 +530,14 @@ export default function HomePage() {
                 >
                   {whyChooseCards.map((card, index) => (
                     <CarouselItem key={index} className="pl-4 basis-full">
-                      {/* Removed motion.div for mobile carousel items */}
-                      <div className="text-center space-y-4 p-4">
-                        <div className="w-16 h-16 bg-[#B18C45] rounded-full flex items-center justify-center mx-auto">
-                          {card.icon}
+                      <motion.div variants={itemVariantsFromTop}>
+                        <div className="text-center space-y-4 p-4">
+                          <div className="w-16 h-16 bg-[#B18C45] rounded-full flex items-center justify-center mx-auto">
+                            {card.icon}
+                          </div>
+                          <h3 className="font-bold text-[#282828]">{card.title}</h3>
                         </div>
-                        <h3 className="font-bold text-[#282828]">{card.title}</h3>
-                      </div>
+                      </motion.div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
@@ -632,230 +546,87 @@ export default function HomePage() {
           ) : (
             <motion.div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8" variants={containerVariants}>
               {whyChooseCards.map((card, index) => (
-                <motion.div
-                  key={index}
-                  className="text-center space-y-4"
-                  variants={itemVariantsFromTop} // Apply itemVariantsFromTop for a subtle top-down effect
-                >
-                  <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <CardContent className="p-8 text-center space-y-4">
-                      <div className="w-16 h-16 bg-[#B18C45] rounded-full flex items-center justify-center mx-auto">
-                        {card.icon}
-                      </div>
-                      <h3 className="font-bold text-[#282828] text-lg">{card.title}</h3>
-                    </CardContent>
-                  </Card>
+                <motion.div key={index} className="text-center space-y-4" variants={itemVariantsFromTop}>
+                  <div className="w-16 h-16 bg-[#B18C45] rounded-full flex items-center justify-center mx-auto">
+                    {card.icon}
+                  </div>
+                  <h3 className="font-bold text-[#282828]">{card.title}</h3>
                 </motion.div>
               ))}
             </motion.div>
           )}
         </motion.div>
       </motion.section>
+
+
       {/* Témoignages */}
-      <motion.section
-        className="py-16 bg-gray-50"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <motion.div className="container mx-auto px-16 max-w-4xl" variants={fadeInVariants}>
-          {!isMobile ? ( // Apply animation only on PC
-            <motion.div className="text-center mb-12" variants={fadeInFromTopVariants}>
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">Témoignages clients</h2>
-            </motion.div>
-          ) : (
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">Témoignages clients</h2>
-            </div>
-          )}
-          {!isMobile ? ( // Apply animation only on PC
-            <motion.div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto" variants={containerVariants}>
-              <motion.div variants={itemVariants}>
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-8">
-                    <div className="flex items-center mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-[#B18C45] fill-current" />
-                      ))}
-                    </div>
-                    <p className="text-[#282828]/80 mb-4 italic">
-                      "Grâce à 5P, notre bureau est devenu un espace moderne et fonctionnel, parfaitement adapté à nos
-                      activités."
-                    </p>
-                    <p className="font-semibold text-[#282828]">– Samir B.</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-              <motion.div variants={itemVariants}>
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-8">
-                    <div className="flex items-center mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-[#B18C45] fill-current" />
-                      ))}
-                    </div>
-                    <p className="text-[#282828]/80 mb-4 italic">
-                      "Une équipe réactive et créative, très satisfaite du résultat pour notre maison."
-                    </p>
-                    <p className="font-semibold text-[#282828]">– Fatima L.</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            </motion.div>
-          ) : (
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div>
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-8">
-                    <div className="flex items-center mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-[#B18C45] fill-current" />
-                      ))}
-                    </div>
-                    <p className="text-[#282828]/80 mb-4 italic">
-                      "Grâce à 5P, notre bureau est devenu un espace moderne et fonctionnel, parfaitement adapté à nos
-                      activités."
-                    </p>
-                    <p className="font-semibold text-[#282828]">– Samir B.</p>
-                  </CardContent>
-                </Card>
-              </div>
-              <div>
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-8">
-                    <div className="flex items-center mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-[#B18C45] fill-current" />
-                      ))}
-                    </div>
-                    <p className="text-[#282828]/80 mb-4 italic">
-                      "Une équipe réactive et créative, très satisfaite du résultat pour notre maison."
-                    </p>
-                    <p className="font-semibold text-[#282828]">– Fatima L.</p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          )}
-        </motion.div>
-      </motion.section>
+         {/* Témoignages */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-16 max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">Témoignages clients</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-[#B18C45] fill-current" />
+                  ))}
+                </div>
+                <p className="text-[#282828]/80 mb-4 italic">
+                  "Grâce à 5P, notre bureau est devenu un espace moderne et fonctionnel, parfaitement adapté à nos
+                  activités."
+                </p>
+                <p className="font-semibold text-[#282828]">– Samir B.</p>
+              </CardContent>
+            </Card>
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-[#B18C45] fill-current" />
+                  ))}
+                </div>
+                <p className="text-[#282828]/80 mb-4 italic">
+                  "Une équipe réactive et créative, très satisfaite du résultat pour notre maison."
+                </p>
+                <p className="font-semibold text-[#282828]">– Fatima L.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
       <motion.section className="py-16" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
         <motion.div className="container mx-auto px-16 max-w-4xl" variants={fadeInVariants}>
-          {!isMobile ? ( // Apply animation only on PC
-            <motion.div className="text-center mb-12" variants={fadeInFromTopVariants}>
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">
-                Besoin d'un conseil ou d'un devis personnalisé ?
-              </h2>
-              <p className="text-lg text-[#282828]/70 max-w-3xl mx-auto mb-4">
-                Notre équipe 5P vous accompagne dans tous vos projets de décoration, d'aménagement intérieur ou
-                événementiel. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
-              </p>
-              <p className="text-[#B18C45] font-medium">📩 Vous pouvez aussi nous écrire directement à contact@5p.ma</p>
-            </motion.div>
-          ) : (
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">
-                Besoin d'un conseil ou d'un devis personnalisé ?
-              </h2>
-              <p className="text-lg text-[#282828]/70 max-w-3xl mx-auto mb-4">
-                Notre équipe 5P vous accompagne dans tous vos projets de décoration, d'aménagement intérieur ou
-                événementiel. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
-              </p>
-              <p className="text-[#B18C45] font-medium">📩 Vous pouvez aussi nous écrire directement à contact@5p.ma</p>
-            </div>
-          )}
+          <motion.div className="text-center mb-12" variants={fadeInFromTopVariants}>
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-4">
+              Besoin d'un conseil ou d'un devis personnalisé ?
+            </h2>
+            <p className="text-lg text-[#282828]/70 max-w-3xl mx-auto mb-4">
+              Notre équipe 5P vous accompagne dans tous vos projets de décoration, d'aménagement intérieur ou
+              événementiel. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
+            </p>
+            <p className="text-[#B18C45] font-medium">📩 Vous pouvez aussi nous écrire directement à contact@5p.ma</p>
+          </motion.div>
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {!isMobile ? ( // Apply animation only on PC
-              <motion.div className="space-y-6" variants={fadeInFromLeftVariants}>
-                <div className="flex items-center space-x-4">
-                  <Phone className="w-6 h-6 text-[#B18C45]" />
-                  <span className="text-[#282828]">+212 5XX XX XX XX</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Mail className="w-6 h-6 text-[#B18C45]" />
-                  <span className="text-[#282828]">contact@5p.ma</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <MapPin className="w-6 h-6 text-[#B18C45]" />
-                  <span className="text-[#282828]">Marrakech, Maroc</span>
-                </div>
-              </motion.div>
-            ) : (
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <Phone className="w-6 h-6 text-[#B18C45]" />
-                  <span className="text-[#282828]">+212 5XX XX XX XX</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Mail className="w-6 h-6 text-[#B18C45]" />
-                  <span className="text-[#282828]">contact@5p.ma</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <MapPin className="w-6 h-6 text-[#B18C45]" />
-                  <span className="text-[#282828]">Marrakech, Maroc</span>
-                </div>
+            <motion.div className="space-y-6" variants={fadeInFromLeftVariants}>
+              <div className="flex items-center space-x-4">
+                <Phone className="w-6 h-6 text-[#B18C45]" />
+                <span className="text-[#282828]">+212 5XX XX XX XX</span>
               </div>
-            )}
-            {!isMobile ? ( // Apply animation only on PC
-              <motion.div variants={fadeInFromRightVariants}>
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-8">
-                    <form className="space-y-6" onSubmit={handleSubmit}>
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div>
-                          <label className="block text-sm font-medium text-[#282828] mb-2">Nom</label>
-                          <Input name="name" className="border-gray-300 focus:border-[#B18C45]" />
-                        </div>
-                        <div>
-                          <label className="block text-sm font-medium text-[#282828] mb-2">Prénom</label>
-                          <Input name="firstName" className="border-gray-300 focus:border-[#B18C45]" />
-                        </div>
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-[#282828] mb-2">Email</label>
-                        <Input type="email" name="email" className="border-gray-300 focus:border-[#B18C45]" />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-[#282828] mb-2">Téléphone</label>
-                        <Input name="phone" className="border-gray-300 focus:border-[#B18C45]" />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-[#282828] mb-2">Message</label>
-                        <Textarea name="message" className="border-gray-300 focus:border-[#B18C45] min-h-[120px]" />
-                      </div>
-                      <AnimatedButton className="w-full bg-[#B18C45] hover:bg-[#B18C45]/90 text-white py-3">
-                        Envoyer ma demande
-                      </AnimatedButton>
-                      <AnimatePresence>
-                        {submissionStatus.success !== null && (
-                          <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -10 }}
-                            transition={{ duration: 0.3 }}
-                            className={`p-4 rounded-md border ${
-                              submissionStatus.success
-                                ? "bg-green-50 border-green-200 text-green-700"
-                                : "bg-red-50 border-red-200 text-red-700"
-                            }`}
-                          >
-                            <div className="flex items-start space-x-3">
-                              {submissionStatus.success ? (
-                                <CheckCircle2 className="w-5 h-5 mt-0.5 text-green-500 flex-shrink-0" />
-                              ) : (
-                                <AlertCircle className="w-5 h-5 mt-0.5 text-red-500 flex-shrink-0" />
-                              )}
-                              <p className="text-sm">{submissionStatus.message}</p>
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </form>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ) : (
+              <div className="flex items-center space-x-4">
+                <Mail className="w-6 h-6 text-[#B18C45]" />
+                <span className="text-[#282828]">contact@5p.ma</span>
+              </div>
+              <div className="flex items-center space-x-4">
+                <MapPin className="w-6 h-6 text-[#B18C45]" />
+                <span className="text-[#282828]">Marrakech, Maroc</span>
+              </div>
+            </motion.div>
+            <motion.div variants={fadeInFromRightVariants}>
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
                   <form className="space-y-6" onSubmit={handleSubmit}>
@@ -911,7 +682,7 @@ export default function HomePage() {
                   </form>
                 </CardContent>
               </Card>
-            )}
+            </motion.div>
           </div>
         </motion.div>
       </motion.section>
